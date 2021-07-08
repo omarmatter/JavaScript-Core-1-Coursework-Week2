@@ -5,8 +5,12 @@ Complete the function to check if the variable `num` satisfies the following req
 - is less than or equal to 100
 Tip: use logical operators
 */
-
-function validate(num) {}
+function validate(num) {
+  if (typeof num === "number" && num % 2 === 0 && num <= 100) {
+    return true;
+  }
+  return false;
+}
 
 /*
 Write a function that:
@@ -16,8 +20,18 @@ Write a function that:
 - numbers greater 100 must be replaced with 100
 */
 
-function formatPercentage(num) {}
-
+function formatPercentage(num) {
+  if (typeof num === "number" && num <= 100) {
+    return `${Math.round(num * 100) / 100}%`;
+  } else if (typeof num === "number" && num > 100) {
+    return `100%`;
+  } else {
+    return "must be number";
+  }
+}
+formatPercentage(100);
+formatPercentage(80); 
+formatPercentage("O"); 
 /*
 Write a function that:
 - takes an array of strings as input

@@ -14,6 +14,27 @@
   6. What value does the "a" parameter take in the first "f1" call?
   7. What is the value of the "a" outer variable when "f1" is called for the first time?
 */
+/*
+
+1. b isn't  defined its local variabels 
+2.console.log(b);
+3 .
+      2
+      6
+      4
+      9
+      6
+      13
+      8
+
+4.  f1 called 2 times (1,3) 
+5.  f2 called 3 times (0,2,4)
+6.  a = 8
+7.  e = 9      
+
+
+
+*/
 
 let x = 2;
 let a = 6;
